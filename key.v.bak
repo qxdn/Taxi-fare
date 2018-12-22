@@ -1,0 +1,30 @@
+module key
+(
+	input                   clk,       //50MHz
+	input reg [3:0]           key,       //输入
+	output reg [3:0]           control       //输出
+);
+
+reg[3:0] D_ff_1;           
+reg[3:0] D_ff_2;     
+reg[3:0] D_ff_3;   
+
+
+always@(posedge clk)
+begin
+	D_ff_1 <= key;       
+end
+
+always@(posedge clk)
+begin
+	D_ff_2 <= D_ff_1;      
+end
+
+always@(posedge clk)
+begin
+	D_ff_3 <= D_ff_2;      
+end
+
+assign contorl = D_ff_1&D_ff_2&D_ff_3;
+
+endmodule 

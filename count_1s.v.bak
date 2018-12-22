@@ -1,0 +1,7 @@
+module count_1s
+(
+	input clk,   //系统时钟
+	input sys_reset, //复位信号
+	
+	output reg data
+);
