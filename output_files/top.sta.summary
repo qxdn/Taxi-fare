@@ -3,91 +3,107 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'seg:u_seg|dri_clk'
-Slack : -36.739
-TNS   : -561.666
+Slack : -35.142
+TNS   : -553.480
 
 Type  : Slow 1200mV 85C Model Setup 'mux:u_mux|cnt[0]'
-Slack : -7.319
-TNS   : -84.693
+Slack : -7.430
+TNS   : -89.976
 
 Type  : Slow 1200mV 85C Model Setup 'sys_clk'
-Slack : -3.937
-TNS   : -112.301
+Slack : -4.082
+TNS   : -119.472
 
-Type  : Slow 1200mV 85C Model Setup 'count_1s:u_count_1|flag_1m'
-Slack : -1.923
-TNS   : -15.384
+Type  : Slow 1200mV 85C Model Setup 'key:u_key|D_ff_1[1]'
+Slack : -3.196
+TNS   : -49.232
 
 Type  : Slow 1200mV 85C Model Setup 'count_1s:u_count_1|clk_1s'
-Slack : -1.567
-TNS   : -13.732
+Slack : -1.744
+TNS   : -15.264
+
+Type  : Slow 1200mV 85C Model Setup 'count_1s:u_count_1|flag_1m'
+Slack : -1.739
+TNS   : -13.912
 
 Type  : Slow 1200mV 85C Model Setup 'key:u_key|D_ff_1[2]'
-Slack : -0.681
-TNS   : -1.285
+Slack : -1.340
+TNS   : -2.513
 
 Type  : Slow 1200mV 85C Model Hold 'mux:u_mux|cnt[0]'
-Slack : -1.087
-TNS   : -11.851
+Slack : -1.401
+TNS   : -19.723
 
 Type  : Slow 1200mV 85C Model Hold 'key:u_key|D_ff_1[2]'
-Slack : -0.413
-TNS   : -0.722
+Slack : -0.802
+TNS   : -1.504
 
 Type  : Slow 1200mV 85C Model Hold 'sys_clk'
-Slack : -0.079
-TNS   : -0.082
+Slack : -0.127
+TNS   : -0.133
 
 Type  : Slow 1200mV 85C Model Hold 'seg:u_seg|dri_clk'
-Slack : 0.435
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'count_1s:u_count_1|flag_1m'
-Slack : 0.541
+Slack : 0.454
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'count_1s:u_count_1|clk_1s'
-Slack : 0.767
+Slack : 0.510
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'key:u_key|D_ff_1[2]'
-Slack : -2.914
-TNS   : -5.352
+Type  : Slow 1200mV 85C Model Hold 'count_1s:u_count_1|flag_1m'
+Slack : 0.557
+TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'seg:u_seg|dri_clk'
-Slack : -2.280
-TNS   : -84.695
+Type  : Slow 1200mV 85C Model Hold 'key:u_key|D_ff_1[1]'
+Slack : 0.629
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'sys_clk'
-Slack : -2.169
-TNS   : -65.710
+Slack : -2.649
+TNS   : -87.734
+
+Type  : Slow 1200mV 85C Model Recovery 'seg:u_seg|dri_clk'
+Slack : -2.441
+TNS   : -92.936
+
+Type  : Slow 1200mV 85C Model Recovery 'key:u_key|D_ff_1[1]'
+Slack : -1.807
+TNS   : -27.008
 
 Type  : Slow 1200mV 85C Model Recovery 'count_1s:u_count_1|clk_1s'
-Slack : -1.769
-TNS   : -15.921
+Slack : -1.710
+TNS   : -15.390
+
+Type  : Slow 1200mV 85C Model Recovery 'key:u_key|D_ff_1[2]'
+Slack : -1.580
+TNS   : -3.067
 
 Type  : Slow 1200mV 85C Model Recovery 'count_1s:u_count_1|flag_1m'
-Slack : -1.230
-TNS   : -9.840
-
-Type  : Slow 1200mV 85C Model Removal 'seg:u_seg|dri_clk'
-Slack : 1.189
-TNS   : 0.000
+Slack : -0.593
+TNS   : -4.744
 
 Type  : Slow 1200mV 85C Model Removal 'count_1s:u_count_1|flag_1m'
-Slack : 1.202
+Slack : 0.564
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'sys_clk'
-Slack : 1.525
+Type  : Slow 1200mV 85C Model Removal 'key:u_key|D_ff_1[1]'
+Slack : 1.293
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'count_1s:u_count_1|clk_1s'
-Slack : 1.768
+Type  : Slow 1200mV 85C Model Removal 'seg:u_seg|dri_clk'
+Slack : 1.409
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'key:u_key|D_ff_1[2]'
-Slack : 2.453
+Slack : 1.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'count_1s:u_count_1|clk_1s'
+Slack : 1.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'sys_clk'
+Slack : 2.305
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
@@ -97,6 +113,10 @@ TNS   : -71.402
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seg:u_seg|dri_clk'
 Slack : -1.487
 TNS   : -72.863
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'key:u_key|D_ff_1[1]'
+Slack : -1.487
+TNS   : -23.792
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'count_1s:u_count_1|clk_1s'
 Slack : -1.487
@@ -111,95 +131,111 @@ Slack : -1.487
 TNS   : -2.974
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mux:u_mux|cnt[0]'
-Slack : 0.293
+Slack : 0.264
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'seg:u_seg|dri_clk'
-Slack : -33.606
-TNS   : -511.319
+Slack : -32.025
+TNS   : -503.664
 
 Type  : Slow 1200mV 0C Model Setup 'mux:u_mux|cnt[0]'
-Slack : -6.937
-TNS   : -79.656
+Slack : -6.997
+TNS   : -85.098
 
 Type  : Slow 1200mV 0C Model Setup 'sys_clk'
-Slack : -3.648
-TNS   : -103.057
+Slack : -3.775
+TNS   : -108.544
 
-Type  : Slow 1200mV 0C Model Setup 'count_1s:u_count_1|flag_1m'
-Slack : -1.695
-TNS   : -13.560
+Type  : Slow 1200mV 0C Model Setup 'key:u_key|D_ff_1[1]'
+Slack : -2.970
+TNS   : -45.720
 
 Type  : Slow 1200mV 0C Model Setup 'count_1s:u_count_1|clk_1s'
-Slack : -1.376
-TNS   : -12.021
+Slack : -1.548
+TNS   : -13.510
+
+Type  : Slow 1200mV 0C Model Setup 'count_1s:u_count_1|flag_1m'
+Slack : -1.496
+TNS   : -11.968
 
 Type  : Slow 1200mV 0C Model Setup 'key:u_key|D_ff_1[2]'
-Slack : -0.568
-TNS   : -1.034
+Slack : -1.191
+TNS   : -2.219
 
 Type  : Slow 1200mV 0C Model Hold 'mux:u_mux|cnt[0]'
-Slack : -0.850
-TNS   : -7.275
+Slack : -1.090
+TNS   : -14.215
 
 Type  : Slow 1200mV 0C Model Hold 'key:u_key|D_ff_1[2]'
-Slack : -0.421
-TNS   : -0.698
+Slack : -0.824
+TNS   : -1.537
 
 Type  : Slow 1200mV 0C Model Hold 'sys_clk'
-Slack : -0.048
-TNS   : -0.048
+Slack : -0.107
+TNS   : -0.107
 
 Type  : Slow 1200mV 0C Model Hold 'seg:u_seg|dri_clk'
-Slack : 0.389
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'count_1s:u_count_1|flag_1m'
-Slack : 0.500
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'count_1s:u_count_1|clk_1s'
-Slack : 0.714
+Slack : 0.471
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'key:u_key|D_ff_1[2]'
-Slack : -2.626
-TNS   : -4.727
+Type  : Slow 1200mV 0C Model Hold 'count_1s:u_count_1|flag_1m'
+Slack : 0.513
+TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'seg:u_seg|dri_clk'
-Slack : -2.240
-TNS   : -81.103
+Type  : Slow 1200mV 0C Model Hold 'key:u_key|D_ff_1[1]'
+Slack : 0.557
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'sys_clk'
-Slack : -1.964
-TNS   : -58.262
+Slack : -2.426
+TNS   : -80.303
+
+Type  : Slow 1200mV 0C Model Recovery 'seg:u_seg|dri_clk'
+Slack : -2.370
+TNS   : -90.846
+
+Type  : Slow 1200mV 0C Model Recovery 'key:u_key|D_ff_1[1]'
+Slack : -1.682
+TNS   : -25.112
 
 Type  : Slow 1200mV 0C Model Recovery 'count_1s:u_count_1|clk_1s'
-Slack : -1.610
-TNS   : -14.490
+Slack : -1.566
+TNS   : -14.094
+
+Type  : Slow 1200mV 0C Model Recovery 'key:u_key|D_ff_1[2]'
+Slack : -1.328
+TNS   : -2.565
 
 Type  : Slow 1200mV 0C Model Recovery 'count_1s:u_count_1|flag_1m'
-Slack : -1.020
-TNS   : -8.160
+Slack : -0.432
+TNS   : -3.456
 
 Type  : Slow 1200mV 0C Model Removal 'count_1s:u_count_1|flag_1m'
-Slack : 1.024
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'seg:u_seg|dri_clk'
-Slack : 1.181
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'sys_clk'
-Slack : 1.388
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'count_1s:u_count_1|clk_1s'
-Slack : 1.689
+Slack : 0.427
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'key:u_key|D_ff_1[2]'
-Slack : 2.147
+Slack : 1.172
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'key:u_key|D_ff_1[1]'
+Slack : 1.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'seg:u_seg|dri_clk'
+Slack : 1.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'count_1s:u_count_1|clk_1s'
+Slack : 1.652
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'sys_clk'
+Slack : 2.058
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
@@ -209,6 +245,10 @@ TNS   : -71.402
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seg:u_seg|dri_clk'
 Slack : -1.487
 TNS   : -72.863
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'key:u_key|D_ff_1[1]'
+Slack : -1.487
+TNS   : -23.792
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'count_1s:u_count_1|clk_1s'
 Slack : -1.487
@@ -220,107 +260,127 @@ TNS   : -11.896
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'key:u_key|D_ff_1[2]'
 Slack : -1.487
-TNS   : -2.974
+TNS   : -3.101
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mux:u_mux|cnt[0]'
-Slack : 0.180
+Slack : 0.077
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'seg:u_seg|dri_clk'
-Slack : -15.339
-TNS   : -218.923
+Slack : -14.998
+TNS   : -216.446
 
 Type  : Fast 1200mV 0C Model Setup 'mux:u_mux|cnt[0]'
-Slack : -2.509
-TNS   : -27.451
+Slack : -2.539
+TNS   : -30.268
 
 Type  : Fast 1200mV 0C Model Setup 'sys_clk'
-Slack : -1.076
-TNS   : -28.179
+Slack : -1.084
+TNS   : -30.057
+
+Type  : Fast 1200mV 0C Model Setup 'key:u_key|D_ff_1[1]'
+Slack : -0.739
+TNS   : -11.052
 
 Type  : Fast 1200mV 0C Model Setup 'count_1s:u_count_1|flag_1m'
-Slack : -0.239
-TNS   : -1.912
+Slack : -0.161
+TNS   : -1.288
 
 Type  : Fast 1200mV 0C Model Setup 'count_1s:u_count_1|clk_1s'
-Slack : -0.060
-TNS   : -0.480
+Slack : -0.110
+TNS   : -0.880
 
 Type  : Fast 1200mV 0C Model Setup 'key:u_key|D_ff_1[2]'
-Slack : 0.332
-TNS   : 0.000
+Slack : -0.009
+TNS   : -0.009
 
 Type  : Fast 1200mV 0C Model Hold 'mux:u_mux|cnt[0]'
-Slack : -0.663
-TNS   : -9.170
+Slack : -0.841
+TNS   : -12.665
 
 Type  : Fast 1200mV 0C Model Hold 'key:u_key|D_ff_1[2]'
-Slack : -0.176
-TNS   : -0.325
+Slack : -0.336
+TNS   : -0.580
 
 Type  : Fast 1200mV 0C Model Hold 'sys_clk'
-Slack : -0.114
-TNS   : -0.258
+Slack : -0.133
+TNS   : -0.241
 
 Type  : Fast 1200mV 0C Model Hold 'seg:u_seg|dri_clk'
-Slack : 0.176
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'count_1s:u_count_1|flag_1m'
-Slack : 0.221
+Slack : 0.185
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'count_1s:u_count_1|clk_1s'
-Slack : 0.306
+Slack : 0.203
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'key:u_key|D_ff_1[2]'
-Slack : -0.806
-TNS   : -1.414
+Type  : Fast 1200mV 0C Model Hold 'count_1s:u_count_1|flag_1m'
+Slack : 0.229
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'key:u_key|D_ff_1[1]'
+Slack : 0.262
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'seg:u_seg|dri_clk'
-Slack : -0.667
-TNS   : -17.945
+Slack : -0.732
+TNS   : -23.126
 
 Type  : Fast 1200mV 0C Model Recovery 'sys_clk'
-Slack : -0.442
-TNS   : -11.490
+Slack : -0.715
+TNS   : -23.092
+
+Type  : Fast 1200mV 0C Model Recovery 'key:u_key|D_ff_1[1]'
+Slack : -0.513
+TNS   : -7.436
 
 Type  : Fast 1200mV 0C Model Recovery 'count_1s:u_count_1|clk_1s'
-Slack : -0.387
-TNS   : -3.483
+Slack : -0.363
+TNS   : -3.267
+
+Type  : Fast 1200mV 0C Model Recovery 'key:u_key|D_ff_1[2]'
+Slack : -0.269
+TNS   : -0.533
 
 Type  : Fast 1200mV 0C Model Recovery 'count_1s:u_count_1|flag_1m'
-Slack : -0.007
-TNS   : -0.056
+Slack : 0.293
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'count_1s:u_count_1|flag_1m'
-Slack : 0.454
+Slack : 0.142
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'seg:u_seg|dri_clk'
-Slack : 0.572
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'sys_clk'
-Slack : 0.654
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'count_1s:u_count_1|clk_1s'
-Slack : 0.862
+Slack : 0.685
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'key:u_key|D_ff_1[2]'
-Slack : 1.080
+Slack : 0.701
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'key:u_key|D_ff_1[1]'
+Slack : 0.769
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'count_1s:u_count_1|clk_1s'
+Slack : 0.847
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'sys_clk'
+Slack : 0.985
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
 Slack : -3.000
-TNS   : -62.638
+TNS   : -62.286
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'seg:u_seg|dri_clk'
 Slack : -1.000
 TNS   : -49.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'key:u_key|D_ff_1[1]'
+Slack : -1.000
+TNS   : -16.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'count_1s:u_count_1|clk_1s'
 Slack : -1.000
@@ -335,7 +395,7 @@ Slack : -1.000
 TNS   : -2.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mux:u_mux|cnt[0]'
-Slack : 0.422
+Slack : 0.354
 TNS   : 0.000
 
 ------------------------------------------------------------

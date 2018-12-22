@@ -141,7 +141,7 @@ RESERVED_INPUT               : E6        :        :                   :         
 RESERVED_INPUT               : E7        :        :                   :         : 8         :                
 RESERVED_INPUT               : E8        :        :                   :         : 8         :                
 RESERVED_INPUT               : E9        :        :                   :         : 7         :                
-test_led[0]                  : E10       : output : 3.3-V LVTTL       :         : 7         : Y              
+RESERVED_INPUT               : E10       :        :                   :         : 7         :                
 RESERVED_INPUT               : E11       :        :                   :         : 7         :                
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
@@ -156,7 +156,7 @@ RESERVED_INPUT               : F5        :        :                   :         
 RESERVED_INPUT               : F6        :        :                   :         : 8         :                
 RESERVED_INPUT               : F7        :        :                   :         : 8         :                
 RESERVED_INPUT               : F8        :        :                   :         : 8         :                
-test_led[1]                  : F9        : output : 3.3-V LVTTL       :         : 7         : Y              
+RESERVED_INPUT               : F9        :        :                   :         : 7         :                
 RESERVED_INPUT               : F10       :        :                   :         : 7         :                
 RESERVED_INPUT               : F11       :        :                   :         : 7         :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
@@ -208,7 +208,7 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 RESERVED_INPUT               : J11       :        :                   :         : 5         :                
 RESERVED_INPUT               : J12       :        :                   :         : 5         :                
-RESERVED_INPUT               : J13       :        :                   :         : 5         :                
+test_led                     : J13       : output : 3.3-V LVTTL       :         : 5         : N              
 RESERVED_INPUT               : J14       :        :                   :         : 5         :                
 RESERVED_INPUT               : J15       :        :                   :         : 5         :                
 RESERVED_INPUT               : J16       :        :                   :         : 5         :                

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Wed Dec 19 18:02:27 2018
+Sat Dec 22 15:21:11 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -19,21 +19,22 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
  11. Inverted Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: count_1s:u_count_1
- 14. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Div0
- 15. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod1
- 16. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Div1
- 17. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod2
- 18. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod0
- 19. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Div2
- 20. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod3
- 21. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
- 22. lpm_mult Parameter Settings by Entity Instance
- 23. Port Connectivity Checks: "mux:u_mux"
- 24. Port Connectivity Checks: "seg:u_seg"
- 25. Port Connectivity Checks: "count_1s:u_count_1"
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
- 28. Analysis & Synthesis Suppressed Messages
+ 14. Parameter Settings for User Entity Instance: count_km:u_count_km
+ 15. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Div0
+ 16. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod1
+ 17. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Div1
+ 18. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod2
+ 19. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod0
+ 20. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Div2
+ 21. Parameter Settings for Inferred Entity Instance: seg:u_seg|lpm_divide:Mod3
+ 22. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 23. lpm_mult Parameter Settings by Entity Instance
+ 24. Port Connectivity Checks: "mux:u_mux"
+ 25. Port Connectivity Checks: "seg:u_seg"
+ 26. Port Connectivity Checks: "count_1s:u_count_1"
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -59,16 +60,16 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 19 18:02:27 2018       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 22 15:21:11 2018       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; top                                         ;
 ; Top-level Entity Name              ; top_czcjj                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,178                                       ;
-;     Total combinational functions  ; 1,170                                       ;
-;     Dedicated logic registers      ; 114                                         ;
-; Total registers                    ; 114                                         ;
-; Total pins                         ; 19                                          ;
+; Total logic elements               ; 1,200                                       ;
+;     Total combinational functions  ; 1,192                                       ;
+;     Dedicated logic registers      ; 130                                         ;
+; Total registers                    ; 130                                         ;
+; Total pins                         ; 18                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -191,6 +192,7 @@ applicable agreement for further details.
 ; count_1s.v                       ; yes             ; User Verilog HDL File        ; F:/czcjj/count_1s.v                                                ;         ;
 ; top_czcjj.v                      ; yes             ; User Verilog HDL File        ; F:/czcjj/top_czcjj.v                                               ;         ;
 ; mux.v                            ; yes             ; User Verilog HDL File        ; F:/czcjj/mux.v                                                     ;         ;
+; count_km.v                       ; yes             ; User Verilog HDL File        ; F:/czcjj/count_km.v                                                ;         ;
 ; lpm_divide.tdf                   ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf          ;         ;
 ; abs_divider.inc                  ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/abs_divider.inc         ;         ;
 ; sign_div_unsign.inc              ; yes             ; Megafunction                 ; f:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc     ;         ;
@@ -236,28 +238,28 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 1,178                   ;
+; Estimated Total logic elements              ; 1,200                   ;
 ;                                             ;                         ;
-; Total combinational functions               ; 1170                    ;
+; Total combinational functions               ; 1192                    ;
 ; Logic element usage by number of LUT inputs ;                         ;
-;     -- 4 input functions                    ; 211                     ;
-;     -- 3 input functions                    ; 329                     ;
-;     -- <=2 input functions                  ; 630                     ;
+;     -- 4 input functions                    ; 234                     ;
+;     -- 3 input functions                    ; 313                     ;
+;     -- <=2 input functions                  ; 645                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 796                     ;
-;     -- arithmetic mode                      ; 374                     ;
+;     -- normal mode                          ; 803                     ;
+;     -- arithmetic mode                      ; 389                     ;
 ;                                             ;                         ;
-; Total registers                             ; 114                     ;
-;     -- Dedicated logic registers            ; 114                     ;
+; Total registers                             ; 130                     ;
+;     -- Dedicated logic registers            ; 130                     ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
-; I/O pins                                    ; 19                      ;
+; I/O pins                                    ; 18                      ;
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
 ; Maximum fan-out node                        ; key:u_key|sys_reset_n~0 ;
-; Maximum fan-out                             ; 102                     ;
-; Total fan-out                               ; 3364                    ;
-; Average fan-out                             ; 2.54                    ;
+; Maximum fan-out                             ; 118                     ;
+; Total fan-out                               ; 3498                    ;
+; Average fan-out                             ; 2.58                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -266,8 +268,9 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Library Name ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
-; |top_czcjj                                  ; 1170 (28)         ; 114 (0)      ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |top_czcjj                                                                                                           ; work         ;
+; |top_czcjj                                  ; 1192 (28)         ; 130 (0)      ; 0           ; 0            ; 0       ; 0         ; 18   ; 0            ; |top_czcjj                                                                                                           ; work         ;
 ;    |count_1s:u_count_1|                     ; 61 (61)           ; 46 (46)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|count_1s:u_count_1                                                                                        ; work         ;
+;    |count_km:u_count_km|                    ; 21 (21)           ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|count_km:u_count_km                                                                                       ; work         ;
 ;    |key:u_key|                              ; 8 (8)             ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|key:u_key                                                                                                 ; work         ;
 ;    |lpm_mult:Mult0|                         ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|lpm_mult:Mult0                                                                                            ; work         ;
 ;       |multcore:mult_core|                  ; 21 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|lpm_mult:Mult0|multcore:mult_core                                                                         ; work         ;
@@ -275,7 +278,7 @@ applicable agreement for further details.
 ;             |lpm_add_sub:adder[0]|          ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                                    ; work         ;
 ;                |add_sub_kgh:auto_generated| ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_kgh:auto_generated         ; work         ;
 ;    |mux:u_mux|                              ; 23 (23)           ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|mux:u_mux                                                                                                 ; work         ;
-;    |seg:u_seg|                              ; 1029 (49)         ; 54 (54)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg                                                                                                 ; work         ;
+;    |seg:u_seg|                              ; 1030 (49)         ; 54 (54)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg                                                                                                 ; work         ;
 ;       |lpm_divide:Div0|                     ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Div0                                                                                 ; work         ;
 ;          |lpm_divide_2jm:auto_generated|    ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Div0|lpm_divide_2jm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_qlh:divider|   ; 160 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Div0|lpm_divide_2jm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
@@ -292,10 +295,10 @@ applicable agreement for further details.
 ;          |lpm_divide_5bm:auto_generated|    ; 163 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod0|lpm_divide_5bm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_qlh:divider|   ; 163 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
 ;                |alt_u_div_87f:divider|      ; 163 (163)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod0|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider ; work         ;
-;       |lpm_divide:Mod1|                     ; 125 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1                                                                                 ; work         ;
-;          |lpm_divide_5bm:auto_generated|    ; 125 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated                                                   ; work         ;
-;             |sign_div_unsign_qlh:divider|   ; 125 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
-;                |alt_u_div_87f:divider|      ; 125 (125)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider ; work         ;
+;       |lpm_divide:Mod1|                     ; 126 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1                                                                                 ; work         ;
+;          |lpm_divide_5bm:auto_generated|    ; 126 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_qlh:divider|   ; 126 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
+;                |alt_u_div_87f:divider|      ; 126 (126)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider ; work         ;
 ;       |lpm_divide:Mod2|                     ; 94 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod2                                                                                 ; work         ;
 ;          |lpm_divide_5bm:auto_generated|    ; 94 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod2|lpm_divide_5bm:auto_generated                                                   ; work         ;
 ;             |sign_div_unsign_qlh:divider|   ; 94 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top_czcjj|seg:u_seg|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider                       ; work         ;
@@ -351,10 +354,10 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 114   ;
-; Number of registers using Synchronous Clear  ; 58    ;
+; Total registers                              ; 130   ;
+; Number of registers using Synchronous Clear  ; 74    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 102   ;
+; Number of registers using Asynchronous Clear ; 118   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 9     ;
 ; Number of registers using Preset             ; 0     ;
@@ -389,9 +392,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top_czcjj|seg:u_seg|num_disp[3] ;
-; 16:1               ; 7 bits    ; 70 LEs        ; 42 LEs               ; 28 LEs                 ; Yes        ; |top_czcjj|seg:u_seg|seg_led[1]  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |top_czcjj|mux:u_mux|Mux16       ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top_czcjj|seg:u_seg|num_disp[0] ;
+; 16:1               ; 7 bits    ; 70 LEs        ; 42 LEs               ; 28 LEs                 ; Yes        ; |top_czcjj|seg:u_seg|seg_led[6]  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |top_czcjj|mux:u_mux|Mux12       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
 
@@ -403,6 +406,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; time_60        ; 00111100                     ; Unsigned Binary ;
 ; MAX_NUM        ; 0001011111010111100000111111 ; Unsigned Binary ;
 +----------------+------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: count_km:u_count_km ;
++----------------+------------------+------------------------------+
+; Parameter Name ; Value            ; Type                         ;
++----------------+------------------+------------------------------+
+; max_km         ; 0010011100001111 ; Unsigned Binary              ;
++----------------+------------------+------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -622,31 +635,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+----------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux:u_mux"                                                                                                                                                                                              ;
-+--------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port                     ; Type   ; Severity ; Details                                                                                                                                                                             ;
-+--------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; data_1_kilometer[11..5]  ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_1_kilometer[3..2]   ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_1_kilometer[15..12] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_1_kilometer[4]      ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_1_kilometer[1]      ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_1_kilometer[0]      ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_1_point[3..2]       ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_1_point[1]          ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_1_point[0]          ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_2_time              ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; data_2_point             ; Input  ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts.    ;
-; data_3_price             ; Input  ; Warning  ; Input port expression (8 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "data_3_price[15..8]" will be connected to GND.                              ;
-; data_3_price[7..3]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_3_price[1..0]       ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_3_price[10]         ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_3_point[3..2]       ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; data_3_point[1]          ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
-; data_3_point[0]          ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
-; dis_point                ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (5 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND.               ;
-+--------------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mux:u_mux"                                                                                                                                                                                        ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type   ; Severity ; Details                                                                                                                                                                             ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_2_time        ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (16 bits) it drives.  The 16 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data_2_point       ; Input  ; Warning  ; Input port expression (5 bits) is wider than the input port (4 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts.    ;
+; data_3_price       ; Input  ; Warning  ; Input port expression (8 bits) is smaller than the input port (16 bits) it drives.  Extra input bit(s) "data_3_price[15..8]" will be connected to GND.                              ;
+; data_3_price[7..3] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; data_3_price[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; data_3_price[10]   ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; data_3_point[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; data_3_point[1]    ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                        ;
+; data_3_point[0]    ; Input  ; Info     ; Stuck at GND                                                                                                                                                                        ;
+; dis_point          ; Output ; Warning  ; Output or bidir port (4 bits) is smaller than the port expression (5 bits) it drives.  The 1 most-significant bit(s) in the port expression will be connected to GND.               ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -673,7 +677,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -683,7 +687,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Wed Dec 19 18:02:14 2018
+    Info: Processing started: Sat Dec 22 15:20:59 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file key.v
@@ -697,6 +701,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file top_czc
 Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus II megafunction library
 Info (12021): Found 1 design units, including 1 entities, in source file mux.v
     Info (12023): Found entity 1: mux
+Info (12021): Found 1 design units, including 1 entities, in source file count_km.v
+    Info (12023): Found entity 1: count_km
 Info (12127): Elaborating entity "top_czcjj" for the top level hierarchy
 Info (12128): Elaborating entity "key" for hierarchy "key:u_key"
 Info (12128): Elaborating entity "count_1s" for hierarchy "count_1s:u_count_1"
@@ -729,6 +735,7 @@ Info (10041): Inferred latch for "dis_data[12]" at mux.v(34)
 Info (10041): Inferred latch for "dis_data[13]" at mux.v(34)
 Info (10041): Inferred latch for "dis_data[14]" at mux.v(34)
 Info (10041): Inferred latch for "dis_data[15]" at mux.v(34)
+Info (12128): Elaborating entity "count_km" for hierarchy "count_km:u_count_km"
 Warning (12011): Net is missing source, defaulting to GND
     Warning (12110): Net "dis_point[4]" is missing source, defaulting to GND
 Warning (12011): Net is missing source, defaulting to GND
@@ -811,31 +818,34 @@ Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|multcore:mul
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_kgh.tdf
     Info (12023): Found entity 1: add_sub_kgh
 Info (12131): Elaborated megafunction instantiation "lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "lpm_mult:Mult0"
+Warning (12069): Ignored assignment(s) for "test_led[0]" because "test_led" is not a bus or array
+Warning (12069): Ignored assignment(s) for "test_led[1]" because "test_led" is not a bus or array
+Warning (12069): Ignored assignment(s) for "test_led[2]" because "test_led" is not a bus or array
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch mux:u_mux|dis_point[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
 Warning (13012): Latch mux:u_mux|dis_point[2] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
 Warning (13012): Latch mux:u_mux|dis_data[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[1] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[2] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[7] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[10] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[6] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[5] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[13] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[8] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[11] has unsafe behavior
@@ -843,15 +853,16 @@ Warning (13012): Latch mux:u_mux|dis_data[11] has unsafe behavior
 Warning (13012): Latch mux:u_mux|dis_data[9] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[12] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[15] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Warning (13012): Latch mux:u_mux|dis_data[14] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[0]
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal mux:u_mux|cnt[1]
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "seg:u_seg|lpm_divide:Mod1|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_9_result_int[0]~10"
     Info (17048): Logic cell "seg:u_seg|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_9_result_int[0]~10"
     Info (17048): Logic cell "seg:u_seg|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_10_result_int[0]~10"
     Info (17048): Logic cell "seg:u_seg|lpm_divide:Mod2|lpm_divide_5bm:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_87f:divider|add_sub_11_result_int[0]~10"
@@ -866,14 +877,14 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file F:/czcjj/output_files/top.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1198 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1219 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 1179 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 4698 megabytes
-    Info: Processing ended: Wed Dec 19 18:02:27 2018
-    Info: Elapsed time: 00:00:13
+    Info (21059): Implemented 13 output pins
+    Info (21061): Implemented 1201 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 56 warnings
+    Info: Peak virtual memory: 4699 megabytes
+    Info: Processing ended: Sat Dec 22 15:21:11 2018
+    Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:12
 
 

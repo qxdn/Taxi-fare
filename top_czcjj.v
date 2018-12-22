@@ -3,7 +3,7 @@ module top_czcjj(
 	input reset_n,
 	input   [2:0]    key,       //3个按键输入
 	
-	output [1:0] test_led,  //2个测试LED
+	output  test_led,  //1个测试LED
 	output [3:0] seg_sel,  //位选
 	output [7:0] seg_led   //段选
 );
@@ -15,13 +15,16 @@ wire [4:0] second_point;
 wire [15:0] dis_data;
 wire [4:0] dis_point;
 wire change_dis;
+wire add_km;
+wire [15:0] data_km;
+wire [3:0]	point_km;
 
 key u_key(
 	.clk          			(sys_clk),
 	.reset_n    		   (reset_n),
 	.key 			         (key),
 	
-	.control      			({change_dis,test_led}),
+	.control      			({{change_dis,add_km},test_led}),
 	.sys_reset_n  			(sys_reset_n)
 );
 
@@ -47,8 +50,8 @@ seg u_seg(
 mux u_mux(
 	.key_dri					(change_dis),
 	.sys_reset_n 			(sys_reset_n),
-	.data_1_kilometer		(16'b1111_1110_1101),
-	.data_1_point			(4'b0010),
+	.data_1_kilometer		(data_km),
+	.data_1_point			(point_km),
 	.data_2_time			(data_m*100+data_s),
 	.data_2_point			(second_point),
 	.data_3_price			(8'b1111_1011),
@@ -56,6 +59,13 @@ mux u_mux(
 	
 	.dis_data				(dis_data),
 	.dis_point				(dis_point)
+);
+count_km u_count_km(
+	.key_dri					(add_km),
+	.sys_reset_n			(sys_reset_n),
+	
+	.data_km					(data_km),
+	.point					(point_km)
 );
 
 endmodule
