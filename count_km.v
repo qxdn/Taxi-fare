@@ -1,6 +1,7 @@
 module count_km(
 	input key_dri,
 	input sys_reset_n,
+	input EN,
 	
 	output reg [15:0] data_km,
 	output [3:0] point
@@ -19,6 +20,8 @@ always @(negedge key_dri or negedge sys_reset_n)
 			begin
 				data_km<=16'b0;
 			end
+		else if(!EN)
+			data_km<=data_km;
 		else if(!key_dri)
 			begin
 				if(data_km<max_km)

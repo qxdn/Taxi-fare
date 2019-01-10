@@ -208,7 +208,7 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 RESERVED_INPUT               : J11       :        :                   :         : 5         :                
 RESERVED_INPUT               : J12       :        :                   :         : 5         :                
-test_led                     : J13       : output : 3.3-V LVTTL       :         : 5         : N              
+RESERVED_INPUT               : J13       :        :                   :         : 5         :                
 RESERVED_INPUT               : J14       :        :                   :         : 5         :                
 RESERVED_INPUT               : J15       :        :                   :         : 5         :                
 RESERVED_INPUT               : J16       :        :                   :         : 5         :                

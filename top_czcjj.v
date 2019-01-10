@@ -3,7 +3,6 @@ module top_czcjj(
 	input reset_n,
 	input   [2:0]    key,       //3个按键输入
 	
-	output  test_led,  //1个测试LED
 	output [3:0] seg_sel,  //位选
 	output [7:0] seg_led   //段选
 );
@@ -18,20 +17,27 @@ wire change_dis;
 wire add_km;
 wire [15:0] data_km;
 wire [3:0]	point_km;
+wire [15:0]	data_price;
+wire [3:0] point_price;
+wire stop_key;
+wire en_time;
+wire en_km;
 
 key u_key(
 	.clk          			(sys_clk),
 	.reset_n    		   (reset_n),
 	.key 			         (key),
 	
-	.control      			({{change_dis,add_km},test_led}),
+	.change_dis      		(change_dis),
+	.add_km					(add_km),
+	.stop						(stop_key),
 	.sys_reset_n  			(sys_reset_n)
 );
 
 count_1s u_count_1(
 	.clk						(sys_clk),
 	.sys_reset_n			(sys_reset_n),
-	.EN                  (1'b1),
+	.EN                  (en_time),
 	
 	.data_s					(data_s),
 	.data_m					(data_m),
@@ -54,8 +60,8 @@ mux u_mux(
 	.data_1_point			(point_km),
 	.data_2_time			(data_m*100+data_s),
 	.data_2_point			(second_point),
-	.data_3_price			(8'b1111_1011),
-	.data_3_point			(4'b0010),
+	.data_3_price			(data_price),
+	.data_3_point			(point_price),
 	
 	.dis_data				(dis_data),
 	.dis_point				(dis_point)
@@ -63,9 +69,25 @@ mux u_mux(
 count_km u_count_km(
 	.key_dri					(add_km),
 	.sys_reset_n			(sys_reset_n),
+	.EN						(en_km),
 	
 	.data_km					(data_km),
 	.point					(point_km)
 );
+count_money u_price(
+	.data_m					(data_m),
+	.data_km					(data_km),
+	.sys_reset_n			(sys_reset_n),
+	.clk						(sys_clk),
+	
+	.data_price				(data_price),
+	.point					(point_price)
+);
+stop_car u_stop(
+	.stop_key				(stop_key),
+	.sys_reset_n			(sys_reset_n),
 
+	.en_time					(en_time),
+	.en_km					(en_km)
+);
 endmodule

@@ -2,12 +2,14 @@
 <LOG_ROOT>
 	<PROJECT NAME="top">
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_2jm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_fkm.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Mod3" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|count_money:u_price|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_vim.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_kgh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_5jm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Mod2" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|count_money:u_price|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_hhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_fkm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_czcjj|seg:u_seg|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_5bm.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
